@@ -19,9 +19,9 @@ keymap.set('n', '<leader>n', ':Noice<Return>')
 keymap.set('n', '<leader>u', '<cmd>Telescope undo<cr>')
 
 -- Comments
-api.nvim_set_keymap('n', '<C-c>', 'gcc', { noremap = false })
-api.nvim_set_keymap('v', '<C-c>', 'gcc', { noremap = false })
-api.nvim_set_keymap('x', '<C-c>', 'gcc<C-c>', { noremap = false })
+api.nvim_set_keymap('n', '<C-/>', 'gcc', { noremap = false })
+api.nvim_set_keymap('v', '<C-/>', 'gcc', { noremap = false })
+api.nvim_set_keymap('x', '<C-/>', 'gcc<C-c>', { noremap = false })
 
 -- Macros
 keymap.set('n', 'Q', '@qj')
@@ -63,7 +63,7 @@ keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
 
 -- select all document
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+keymap.set('n', '<leader>a', 'gg<S-v>G')
 
 -- Split Window
 keymap.set('n', 'ss', ':split<Return>', opts)
